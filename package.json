@@ -1,8 +1,11 @@
 {
   "name": "dotenv2env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loads the environment variables from a .env file",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "dotenv2env": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "commit": "git-cz",
