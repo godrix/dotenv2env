@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import fs from 'fs';
 import path from 'path'
 import { spawn } from 'child_process'
@@ -8,7 +7,7 @@ import chalk from 'chalk';
 
 const log = console.log;
 
-export async function run() {
+export default async function run() {
   const response = await argv;
 
   if (!response._.length) {
@@ -97,6 +96,3 @@ export async function run() {
   });
 
 }
-
-
-run();
