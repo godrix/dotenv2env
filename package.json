@@ -1,8 +1,9 @@
 {
   "name": "dotenv2env",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Loads the environment variables from a .env file",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "dotenv2env": "dist/index.js"
   },
@@ -14,7 +15,7 @@
     "commit": "git-cz",
     "lint": "eslint './src/*.ts'",
     "lint:fix": "eslint './src/*.ts' --fix",
-    "start": "node ./dist/index.js power --clear --android --useVerbose",
+    "start": "node ./dist/lib/index.js power --clear --android --useVerbose",
     "power": "node --version",
     "test": "jest",
     "test:watch": "jest --watchAll",
