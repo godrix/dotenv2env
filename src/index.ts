@@ -7,6 +7,8 @@ import chalk from 'chalk';
 
 const log = console.log;
 
+const DEFAULT_ENV = '.env';
+
 export default async function run() {
   const response = await argv;
 
@@ -35,7 +37,7 @@ export default async function run() {
     .map(([key]) => key)
     .map((option) => String(option));
 
-  const envFile = aplicationArgs.useFile ?? '.env';
+  const envFile = aplicationArgs.useFile ?? DEFAULT_ENV;
 
   const verbose = aplicationArgs.useVerbose ?? false;
 
